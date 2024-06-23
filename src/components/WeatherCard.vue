@@ -6,14 +6,6 @@
       <p>Temperature: {{ weatherData.main.temp }}°C</p>
       <p>Humidity: {{ weatherData.main.humidity }}%</p>
     </div>
-    <div class="places-card">
-      <h3>Recommended Place</h3>
-      <div class="place-info">
-        <p>{{ placeData.name }}</p>
-        <p>{{ placeData.location.address }}</p>
-        <p>{{ placeData.location.city }}, {{ placeData.location.state }}, {{ placeData.location.country }}</p>
-      </div>
-    </div>
   </div>
   <div v-else class="loading-message">Loading...</div>
 </template>
